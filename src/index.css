@@ -1,3 +1,11 @@
+* {
+  box-sizing : border-box;
+  padding : 0;
+  margin : 0;
+  font-family : "Josefin Sans", "Arial Narrow"; 
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +18,140 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header{
+  width : 100%;
+  line-height : 100px;
+  background-color : #7b68ee;
+  display : flex;
+  justify-content : start;
+  align-items : center;
+  padding-left : 50px;
+  color : white;
+  box-shadow : 5px 3px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.header h1{
+  justify-content: center;
+  align-items : center;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+.mainnote {
+  justify-content : center;
+  align-items : center;
+  float : center;
+  display : flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 260px;
+  height : auto;
+  margin: 10px auto;
+}
+
+.mainnote button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #7b68ee;
+  color: #c0b9e9;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #7b68ee;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+form{
+  min-height: 50px;
+  color: #ecf0f1;
+  padding : 15px 10px 5px 10px;
+  box-shadow : 3px 5px 15px -5px rgba(0, 0, 0, );
+  border-radius : 10px;
+  position : relative;
+}
+
+form button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+input{
+  width : 100%;
+  line-height: 30px;
+  background : transparent;
+  border : none;
+  outline : none;
+  font-size: 1.5rem;
+  margin : 10px 0;
+  font-weight: bold;
+}
+
+textarea{
+  width : 100%;
+  line-height: 30px;
+  background : transparent;
+  border : none;
+  outline : none;
+  font-size : 1rem;
+  margin : 10px 0;
 }
